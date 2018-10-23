@@ -1,0 +1,20 @@
+<body>
+ <button (click)='onCreate()'>Create</button>
+
+<table>
+ <tr>
+   <td>Name of product</td>
+  
+
+ </tr>
+  <tr *ngFor='let products of products'>
+  <td [class.popular]='products.popular'>{{products.name}}</td>
+  <td>
+    <button (click)='onEdit(products)'>Edit</button>
+    <button (click)='onDelete(products)'>Delete</button>
+
+    </td>
+
+  </tr>
+</table>
+</body>

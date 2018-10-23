@@ -1,0 +1,24 @@
+<body>
+<table>
+ <tr>
+   <td>Name of partner</td>
+    <td>City</td>
+       <td>Liberal</td>
+
+   
+
+ </tr>
+  <tr *ngFor='let partners of partners'>
+  <td [class.liberal] = 'partners.liberal'>{{partners.name}}</td>
+  <td>{{partners.city}}</td>
+  
+    <td>
+    <button (click)='onCreate(partners)'>Create</button>
+    <button (click)='onEdit(partners)'>Edit</button>
+    <button (click)='onDelete(partners)'>Delete</button>
+
+    </td>
+
+  </tr>
+</table>
+</body>
