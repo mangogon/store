@@ -1,10 +1,10 @@
-<div>
+<div *ngIf='partners'>
 <div>
   <label for='name'>Name</label>
-  <input type='text'>
+  <input type='text' [(ngModel)] = 'partners.name'>
   </div>
   <div>
   <label for='liberal'>Liberal</label>
-  <input type='checkbox'>
+  <input type='checkbox' [(ngModel)] = 'partners.liberal'>
   </div>
 </div>
