@@ -8,6 +8,11 @@
   <tr *ngFor='let information of information'>
   <td>{{information.city}}</td>
   <td>{{information.company}}</td>
+  <td>
+    <button (click)='onEdit(information)'>Edit</button>
+    <button (click)='onDelete(information)'>Delete</button>
+
+    </td>
 
   </tr>
 </table>

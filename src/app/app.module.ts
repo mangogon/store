@@ -14,6 +14,7 @@ import { PartnersService} from './shared/partners.service';
 import { PartnersComponent } from './partners/partners.component';
 import { PartnersEditorComponent } from './partners-editor/partners-editor.component';
 import { ProductsEditorComponent } from './products-editor/products-editor.component';
+import { InformationEditorComponent } from './information-editor/information-editor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductsEditorComponent } from './products-editor/products-editor.compo
     InformationComponent,
     PartnersComponent,
     PartnersEditorComponent,
-    ProductsEditorComponent
+    ProductsEditorComponent,
+    InformationEditorComponent
   ],
   imports: [
     BrowserModule,

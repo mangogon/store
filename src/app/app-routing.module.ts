@@ -7,6 +7,7 @@ import{InformationComponent} from './information/information.component';
 import{PartnersComponent} from './partners/partners.component';
 import{PartnersEditorComponent} from './partners-editor/partners-editor.component';
 import{ProductsEditorComponent} from './products-editor/products-editor.component';
+import{InformationEditorComponent} from './information-editor/information-editor.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
 {path: 'partners', component: PartnersComponent},
 {path: 'partners/edit/:id', component: PartnersEditorComponent},
 {path: 'products/edit/:id', component: ProductsEditorComponent},
+{path: 'information/edit/:id', component: InformationEditorComponent},
 
 ];
 

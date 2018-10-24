@@ -5,7 +5,8 @@ import {Information} from './information.model';
 export class InformationService {
 
 data: Information[] = [
-{id:1, city:'Lviv', company: 'our store'}
+{id:1, city:'Lviv', company: 'our store'},
+{id:2, city:'Kharkiv', company: 'miracle'},
 
 ];
 getAll():Information[]{
