@@ -1,10 +1,10 @@
-<div>
+<div *ngIf='information'>
 <div>
   <label for='city'>City</label>
-  <input type='text'>
+  <input type='text' [(ngModel)]='information.city'>
   </div>
   <div>
   <label for='company'>Company</label>
-  <input type='text'>
+  <input type='text' [(ngModel)]='information.company'>
   </div>
 </div>

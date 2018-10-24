@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ActivatedRoute} from '@angular/router';
+import {InformationService} from '../shared/information.service';
+import {Information} from '../shared/information.model';
 
 @Component({
   selector: 'app-information-editor',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./information-editor.component.css']
 })
 export class InformationEditorComponent implements OnInit {
+information:Information;
 
-  constructor() { }
+  constructor(private currentRoute:ActivatedRoute, private service: InformationService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  let id:number = +this.currentRoute.snapshot.paramMap.get('id');
+  this.information = this.service.getById(id);
+  }
   
   
 
