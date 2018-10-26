@@ -8,6 +8,12 @@
   <tr *ngFor='let team of team'>
   <td>{{team.id}}</td>
   <td>{{team.members}}</td>
+     <td>
+    <button (click)='onEdit(team)'>Edit</button>
+    <button (click)='onDelete(team)'>Delete</button>
+    <button (click)='onCreate(team)'>Create</button>
+
+    </td>
 
   </tr>
 </table>

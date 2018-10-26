@@ -16,6 +16,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { PartnersEditorComponent } from './partners-editor/partners-editor.component';
 import { ProductsEditorComponent } from './products-editor/products-editor.component';
 import { InformationEditorComponent } from './information-editor/information-editor.component';
+import { TeamEditorComponent } from './team-editor/team-editor.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InformationEditorComponent } from './information-editor/information-edi
     PartnersComponent,
     PartnersEditorComponent,
     ProductsEditorComponent,
-    InformationEditorComponent
+    InformationEditorComponent,
+    TeamEditorComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import{PartnersComponent} from './partners/partners.component';
 import{PartnersEditorComponent} from './partners-editor/partners-editor.component';
 import{ProductsEditorComponent} from './products-editor/products-editor.component';
 import{InformationEditorComponent} from './information-editor/information-editor.component';
+import{TeamEditorComponent} from './team-editor/team-editor.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
 {path: 'partners/edit/:id', component: PartnersEditorComponent},
 {path: 'products/edit/:id', component: ProductsEditorComponent},
 {path: 'information/edit/:id', component: InformationEditorComponent},
+{path: 'team/edit/:id', component: TeamEditorComponent},
 
 ];
 
