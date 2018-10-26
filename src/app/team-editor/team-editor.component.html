@@ -1,10 +1,10 @@
-<div >
+<div *ngIf='team'>
 <div>
   <label for='id'>№</label>
-  <input type='text'>
+  <input type='number'  [(ngModel)]='team.id'>
   </div>
   <div>
   <label for='members'>Members</label>
-  <input type='text'>
+  <input type='text'  [(ngModel)]='team.members'>
   </div>
 </div>
